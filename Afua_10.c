@@ -9,14 +9,14 @@
  */
 int isinteger(const char *str)
 {
-	if (*str == '-' || *str == '+')
-		++str;
+        if (*str == '-' || *str == '+')
+                ++str;
 
-	if (!*str)
-		return (0);
+        if (!*str)
+                return (0);
 
-	while (isdigit(*str))
-		++str;
+        while (isdigit(*str))
+                ++str;
 
-	return (!*str);
+        return (!*str);
 }
